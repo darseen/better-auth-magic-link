@@ -20,6 +20,7 @@ export default function SignUpForm() {
       await authClient.signIn.magicLink({
         email,
         callbackURL: "/welcome",
+        errorCallbackURL: "/sign-up",
         fetchOptions: { query: { referredBy } },
       });
     } catch (error) {
