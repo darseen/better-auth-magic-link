@@ -8,7 +8,10 @@ export default function Home() {
         <p className="text-xl">with custom fields</p>
       </div>
 
-      <Link href="/sign-up" className="underline">
+      <Link
+        href="/sign-up"
+        className="rounded-md bg-blue-500 px-4 py-2 text-white hover:cursor-pointer mt-4"
+      >
         Sign up
       </Link>
     </main>
